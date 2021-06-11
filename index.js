@@ -22,10 +22,14 @@ function buildCrewArray(ids, candidates){
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
 
+
+// choosing IDs that go.
+
 let chosenIDs = [];
 
 while (chosenIDs.length < 3){
     chosenForLaunch = selectRandomEntry(idNumbers);
+    // checking for duplicates
     if (!chosenIDs.includes(chosenForLaunch)){
         chosenIDs.push(chosenForLaunch);
     }
